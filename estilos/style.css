@@ -1,0 +1,231 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.clear{
+    clear: both;
+}
+
+html,body{
+    height: 100%;
+    background-color: #ff99cc;
+}
+
+header{
+    background-color: #ff99cc;
+    padding: 10px 2% 25px 2%;
+}
+.container{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.logo01{
+    float: left;
+    width: 160px;
+    height: 60px;
+    background-image: url('../imagens/01logo.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo02{
+    float: right;
+    width: 160px;
+    height: 60px;
+    background-image: url('../imagens/02logo.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+section.cover-form{
+    width: 100%;
+}
+
+.bg{
+    position: relative;
+    height: 560px;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg video{
+    width: 100%;
+    position: relative;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    transition: 0.7s;
+    background: rgba(0,0,0,0.8);
+}
+
+.bg video:hover{
+    background: rgba(0,0,0,0);
+}
+
+.form-container{
+    position: absolute;
+    right: 30px;
+    z-index: 2;
+    top: -15px;
+    width: 400px;
+    height: 105%;
+    -webkit-box-shadow:2px 2px 5px 0px rgba(117,117,117,1);
+    -moz-box-shadow:2px 2px 5px 0px rgba(117,117,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,117,117,1);
+    background-color: white;
+}
+
+.form-container h2{
+    font-weight: normal;
+    padding: 25px 15px;
+    font-size: 18px;
+    background-color: #99004d;
+    color: white;
+}
+
+.form-container form{
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.form-container form p{
+    font-size: 14px;
+    color: #525252;
+}
+
+.form-wraper:not(:first-child){
+    margin-top: 40px;
+}
+
+.form-wraper:last-child{
+    margin-top: 20px;
+}
+
+.form-container form input[type=text]{
+    outline: none;
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 10px;
+}
+
+.form-container form input[type=submit]{
+    text-align: center;
+    width: 100%;
+    background-color: #99004d;
+    color: white;
+    font-size: 20px;
+    height: 50px;
+    cursor: pointer;
+    border: 0;
+    border-bottom: 5px solid #e60073;
+}
+
+.form-container form input[type=submit]:hover{
+    background-color: #b30059;
+}
+
+.icone-seta{
+    position: absolute;
+    left: 50%;
+    top: -32px;
+    transform:translateX(-50%);
+    -ms-transform:translateX(-50%);
+    width: 64px;
+    height: 64px;
+    background-size: 100% 100%;
+    background-image: url('../imagens/03arrow.png');
+}
+
+section.chamada{
+    z-index:1;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+section.chamada div.container{
+    background-color: #99004d;
+    padding: 70px 0 50px 0;
+}
+
+section.chamada h2{
+    text-align: center;
+    width: 98%;
+    max-width: 700px;
+    display: inline-block;
+    color: white;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+section.chamada p{
+    text-align: center;
+    width: 98%;
+    max-width: 700px;
+    display: inline-block;
+    color: white;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.flex-mosaico{
+    display: flex;
+}
+
+.item1-mosaico{
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+}
+
+.item2-mosaico{
+    background-color: #ff4da6;
+    padding: 90px 40px;
+    width: 40%;
+}
+
+.item2-mosaico h2{
+    text-align: center;
+    color: white;
+}
+
+.item2-mosaico p{
+    text-align: justify;
+    color: white;
+}
+
+.flex-mosaico input[type=submit]{
+    text-align: center;
+    width: 100%;
+    background-color: #99004d;
+    color: white;
+    font-size: 20px;
+    height: 50px;
+    cursor: pointer;
+    border: 0;
+    border-bottom: 5px solid #e60073;
+}
+
+.flex-mosaico input[type=submit]:hover{
+    background-color: #b30059;
+}
+
+footer{
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ff99cc;
+    color: #99004d;
+}
